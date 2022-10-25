@@ -16,6 +16,19 @@ exports.all = () => {
 };
 
 exports.enabled = () => {
-    return USERS;
+    // let enabledUsers = [];
+
+    // for(let i = 0; i < USERS.length; i++) {
+    //     const user = USERS[i]; 
+    //     if(user.enabled) {
+    //         enabledUsers.push(user);
+    //     }
+    // }
+
+    // return enabledUsers;
+
+    return USERS.filter((user) => {
+        return user.enabled;
+    });
 }
 

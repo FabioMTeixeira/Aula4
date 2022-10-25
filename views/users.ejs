@@ -6,12 +6,10 @@
 
     <ul>
         <% users.forEach((user) => { %>
-            <% if(user.enabled) { %>
         <li>
             <strong>Id: </strong><%= user.id %><br>
             <strong>Name: </strong><%= user.name %>
         </li>
-            <% }; %>
         <% }); %>
     </ul>
 </body>

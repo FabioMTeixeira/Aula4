@@ -15,13 +15,13 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
-    const users = model.all();
+    const users = model.enabled();
 
     res.render('users', { title: 'Users', users: users});
 });
 
 app.get('/api/users', (req, res) => {
-    const users = model.all();
+    const users = model.enabled();
 
     res.send(users);
 });
